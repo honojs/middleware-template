@@ -16,14 +16,14 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/honojs/middlewar-example.git"
+    "url": "https://github.com/honojs/middleware-template.git"
   },
+  "homepage": "https://github.com/honojs/middleware-template",
   "author": "Yusuke Wada <yusuke@kamawada.com> (https://github.com/yusukebe)",
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
     "access": "public"
   },
-  "homepage": "https://github.com/honojs/middleware-example",
   "devDependencies": {
     "@cloudflare/workers-types": "^3.14.0",
     "@types/jest": "^28.1.4",
