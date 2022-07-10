@@ -1,4 +1,4 @@
-import { Context, Next } from 'https://raw.githubusercontent.com/honojs/hono/v1.6.3/deno_dist/mod.ts'
+import { Context, Next } from 'https://deno.land/x/hono@v1.6.3/mod.ts'
 
 export const hello = (message: string = 'Hello') => {
   return async (c: Context, next: Next) => {
