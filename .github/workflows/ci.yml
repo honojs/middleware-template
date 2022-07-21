@@ -25,11 +25,3 @@ jobs:
         with:
           deno-version: v1.x
       - run: deno test deno_test
-
-  bun:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - run: curl -fsSL https://bun.sh/install | bash
-      - run: echo "${HOME}/.bun/bin" >> $GITHUB_PATH
-      - run: bun wiptest bun_test/index.test.ts
