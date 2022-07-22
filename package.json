@@ -10,9 +10,10 @@
   "scripts": {
     "test": "jest",
     "test:deno": "deno test deno_test",
-    "test:all": "yarn test && yarn test:deno && yarn test:bun",
+    "test:all": "yarn test && yarn test:deno",
     "denoify": "rimraf deno_dist && denoify",
     "build": "rimraf dist && tsc",
+    "prerelease": "yarn denoify && yarn build && yarn test:all",
     "release": "yarn publish"
   },
   "license": "MIT",
