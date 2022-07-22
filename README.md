@@ -21,7 +21,7 @@ export default app
 
 ```ts
 import { serve } from 'https://deno.land/std/http/server.ts'
-import { hello } from 'https://deno.land/x/hono_hello'
+import { hello } from 'https://deno.land/x/hono_hello/mod.ts'
 import { Hono } from 'https://deno.land/x/hono/mod.ts'
 
 const app = new Hono()
