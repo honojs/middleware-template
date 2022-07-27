@@ -1,7 +1,7 @@
-import { Context, Next, Handler } from 'hono'
+import { Handler } from 'hono'
 
 export const hello = (message: string = 'Hello'): Handler => {
-  return async (c: Context, next: Next) => {
+  return async (c, next) => {
     await next()
     c.res.headers.append('X-Message', message)
   }
